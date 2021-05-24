@@ -1,0 +1,6 @@
+steps:
+- name: 'bash'
+  id: sample-test-suite
+  args:
+   - 'sleep'
+   - '10'

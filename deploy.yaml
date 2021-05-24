@@ -1,0 +1,9 @@
+steps:
+- id: skaffold-apply
+  name: "gcr.io/k8s-skaffold/skaffold:v1.23.0"
+  entrypoint: "/bin/bash"
+  args:
+    - '-c'
+    - |
+      gcloud container clusters get-credentials prod --zone us-west1-a --project agmsb-k8s
+      skaffold apply -f ./resources.yaml
