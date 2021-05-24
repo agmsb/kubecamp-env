@@ -6,7 +6,7 @@ metadata:
   labels:
     app: kubecamp
     app.kubernetes.io/managed-by: skaffold
-    skaffold.dev/run-id: 088aeb79-6d90-4155-a5ca-db9b9a9470c1
+    skaffold.dev/run-id: 51812c2b-dbf0-44c4-9927-7da16e2ad37a
   name: fancy-features-gtgb94tk65
 ---
 apiVersion: v1
@@ -15,7 +15,7 @@ metadata:
   labels:
     app: kubecamp
     app.kubernetes.io/managed-by: skaffold
-    skaffold.dev/run-id: 088aeb79-6d90-4155-a5ca-db9b9a9470c1
+    skaffold.dev/run-id: 51812c2b-dbf0-44c4-9927-7da16e2ad37a
   name: kubecamp-svc
 spec:
   ports:
@@ -32,7 +32,7 @@ metadata:
   labels:
     app: kubecamp
     app.kubernetes.io/managed-by: skaffold
-    skaffold.dev/run-id: 088aeb79-6d90-4155-a5ca-db9b9a9470c1
+    skaffold.dev/run-id: 51812c2b-dbf0-44c4-9927-7da16e2ad37a
   name: kubecamp-app
 spec:
   replicas: 1
@@ -44,7 +44,7 @@ spec:
       labels:
         app: kubecamp
         app.kubernetes.io/managed-by: skaffold
-        skaffold.dev/run-id: 088aeb79-6d90-4155-a5ca-db9b9a9470c1
+        skaffold.dev/run-id: 51812c2b-dbf0-44c4-9927-7da16e2ad37a
     spec:
       containers:
       - env:
@@ -53,7 +53,7 @@ spec:
             configMapKeyRef:
               key: ENABLE_FEATURE
               name: fancy-features-gtgb94tk65
-        image: gcr.io/agmsb-k8s/kubecamp-app:9c87608@sha256:cbd7b66961cb22990adba3f466559decc33a7b9accfec0d1ca67a55e7ea1392d
+        image: gcr.io/agmsb-k8s/kubecamp-app:241531e@sha256:7934daf4d5c393f78ce878ed0b4f0ae08855cb2343d69998c040d9f350aa0e32
         imagePullPolicy: IfNotPresent
         name: kubecamp-app
         ports:
